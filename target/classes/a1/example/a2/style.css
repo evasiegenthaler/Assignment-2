@@ -1,0 +1,322 @@
+#btnPlay {
+    -fx-background-color: linear-gradient(from 30% 30% to 100% 100%, #6a11cb, #2575fc);
+    -fx-background-radius: 55;
+    -fx-pref-width: 55;
+    -fx-pref-height: 55;
+}
+
+#btnPlay:hover {
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+    -fx-effect: dropshadow(gaussian, #00ffff, 30, 0.6, 0, 0);
+    -fx-cursor: hand;
+}
+
+/*Button Create Character=Add a new Pet to the List*/
+#btnCreate {
+    -fx-background-color: linear-gradient(from 30% 30% to 100% 100%, #347736, #8EB75D); /* Waldgrün */
+    -fx-text-fill: #dddbdb;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-padding: 10px 20px; /*oben und unten= 10. Rechts/links=20*/
+    -fx-background-radius: 25;  /* halb abgerundet */
+    -fx-border-radius: 25;
+    -fx-border-color: transparent;
+    -fx-cursor: hand; /*ändert Mauszeiger zu einer Hand wenn ich über button fahre*/
+}
+
+#btnCreate:hover {
+    -fx-background-color: #9EC66D;; /* heller Grünton für Hover */
+    -fx-border-color: transparent;
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+}
+/*Button Show Character=Display the List of Pets*/
+#btnShow {
+    -fx-background-color: #303033; /* Dunkelgrau */
+    -fx-text-fill: #dddbdb;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: #dddbdb; /* Helle Umrandung */
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+}
+
+#btnShow:hover {
+    -fx-background-color: #a29f9f; /* Hover-Grau */
+    -fx-border-color: #dddbdb; /* Helle Umrandung */
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+}
+#btnQuit2 {
+    -fx-background-color: linear-gradient(from 30% 30% to 100% 100%, #12421E, #175427); /* Waldgrün */
+    -fx-text-fill: #C2BFBF;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+}
+
+#btnQuit2:hover {
+    -fx-background-color: #0d2e13;; /* Hover-Grün */
+}
+
+#dimBackground {
+    -fx-fill: rgba(0, 0, 0, 0.6); /* 60% schwarz transparent */
+}
+/*Button Save Character=Add a new Pet to the List*/
+#btnSave {
+    -fx-background-color: #008caf; /* Dunkleres Blau */
+    -fx-text-fill: #dddbdb;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 25;  /* halb abgerundet */
+    -fx-border-radius: 25;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+#btnSave:hover {
+    -fx-background-color: #82ccdf; /* heller Blauton für Hover */
+    -fx-border-color: transparent;
+}
+
+/*Button Cancel Character=Display the List of Pets*/
+#btnCancel {
+    -fx-background-color: #303033; /* Dunkelgrau */
+    -fx-text-fill: #dddbdb;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: #dddbdb; /* Helle Umrandung */
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+}
+
+#btnCancel:hover {
+    -fx-background-color: #a29f9f; /* Hover-Grau */
+    -fx-border-color: #a29f9f;
+}
+
+#btnEditSave {
+    -fx-background-color: #dddbdb; /* Dunkelgrau */
+    -fx-text-fill: #131315;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 1);
+}
+#btnEditSave:hover {
+    -fx-background-color: #a29f9f; /* Hover-Grau */
+}
+
+#btnDelete {
+    -fx-background-color: #dddbdb; /* Dunkelgrau */
+    -fx-text-fill: #131315;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 1);
+}
+#btnDelete:hover {
+    -fx-background-color: #a29f9f; /* Hover-Grau */
+}
+
+.textfield-uniform,
+.textfield-uniform:focused,
+.textfield-uniform:hover,
+.textfield-uniform:disabled,
+.textfield-uniform:pressed {
+    -fx-background-color: #303033;
+    -fx-text-fill: #dddbdb;
+    -fx-prompt-text-fill: #dddbdb;
+    -fx-highlight-fill: #444444;
+    -fx-highlight-text-fill: #dddbdb;
+    -fx-caret-color: #dddbdb;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: transparent;
+    -fx-font-size: 14px;
+    -fx-padding: 6 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.45), 12, 0.7, 2, 4); /* rgba(0, 0, 0, 0.3): Schwarz mit 30 % Deckkraft → schön dezent,
+    12: Blur Radius – je größer, desto breiter & weicher, 0.2: Spread – wie stark der Schatten verteilt ist, 0, 4: X- und Y-Versatz – in deinem Fall leicht nach unten*/
+}
+
+/*Soll immer hellgrau sein egal ob ich klicke, mit maus fahre usw*/
+
+.pet-card:hover {
+    -fx-effect: dropshadow(gaussian, #00ffff, 30, 0.6, 0, 0);
+    -fx-cursor: hand;
+    -fx-scale-x: 1.08;
+    -fx-scale-y: 1.08;
+}
+.image-container:hover {
+    -fx-cursor: hand;
+    -fx-scale-x: 1.08;
+    -fx-scale-y: 1.08;
+}
+
+/*Text Classes*/
+.text-large {
+    -fx-font-family: 'Beyonders';
+    -fx-text-fill: linear-gradient(from 30% 30% to 100% 100%, #6a11cb, #2575fc);
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+}
+
+.text-medium {
+    -fx-text-fill: #dddbdb;
+    -fx-font-size: 30px;
+}
+
+.text-medium-beyonders{
+    -fx-font-family: 'Beyonders';
+    -fx-text-fill: #dddbdb;
+    -fx-font-size: 13px;
+}
+
+.text-small {
+    -fx-text-fill: #dddbdb;
+    -fx-prompt-text-fill: #dddbdb;
+    -fx-font-size: 16px;
+}
+.text-extra-small{
+    -fx-text-fill: #dddbdb;
+    -fx-font-size: 13px;
+}
+
+.custom-slider .axis {
+    -fx-tick-label-fill: #dddddb; /* alternativ zu tick-label explizit */
+    -fx-tick-length: 5px;
+}
+.custom-slider .tick-mark {
+    -fx-stroke: #dddddb;
+    -fx-stroke-width: 1.2;
+}
+.custom-slider .tick-label {
+    -fx-text-fill: #dddddb;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 1, 0.3, 0, 0);
+}
+
+/* Slider-Farben je nach Wert*/
+.slider-colored-darkred .track {
+    -fx-background-color: linear-gradient(to right, #8B0000 0%, white 0%);
+}
+
+.slider-colored-red .track {
+    -fx-background-color: linear-gradient(to right, red 0%, white 0%);
+}
+
+.slider-colored-orange .track {
+    -fx-background-color: linear-gradient(to right, orange 0%, white 0%);
+}
+
+.slider-colored-green .track {
+    -fx-background-color: linear-gradient(to right, #00cc66 0%, white 0%);
+}
+
+.dark-background {
+    -fx-background-color: #131315;
+}
+.no-border-scrollpane {
+    -fx-border-width: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-background-color: #131315;
+}
+
+#btnBack4 {
+    -fx-background-color: #131315; /* Hintergrunfarbe */
+    -fx-background-radius: 20;
+    -fx-text-fill: #dddddb;
+    -fx-border-color: linear-gradient(from 30% 30% to 100% 100%, #6a11cb, #2575fc);;
+    -fx-border-width: 2;
+    -fx-font-size: 18px;
+    -fx-border-radius: 20;
+    -fx-cursor: hand;
+    -fx-background-insets: 0, 0;  /* wichtig: kein Innenabstand */
+}
+#btnBack4:hover {
+    -fx-effect: dropshadow(gaussian, #7b2ff7, 20, 0.6, 0, 0);
+    -fx-border-color: linear-gradient(from 30% 30% to 100% 100%, #6a11cb, #2575fc);
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+    -fx-background-insets: 0, 0;  /* wichtig: kein Innenabstand */
+}
+
+#btnUpload4 {
+    -fx-background-color: #131315; /* Hintergrundfarbe */
+    -fx-background-radius: 20;
+    -fx-text-fill: #dddddb;
+    -fx-border-color: linear-gradient(from 30% 30% to 100% 100%, #6a11cb, #2575fc);;
+    -fx-border-width: 2;
+    -fx-font-size: 18px;
+    -fx-border-radius: 20;
+    -fx-cursor: hand;
+}
+#btnUpload4:hover {
+    -fx-effect: dropshadow(gaussian, #7b2ff7, 20, 0.6, 0, 0);
+    -fx-border-color: linear-gradient(from 30% 30% to 100% 100%, #6a11cb, #2575fc);
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+}
+
+#btnDownload4 {
+    -fx-background-color: linear-gradient(from 30% 30% to 100% 100%, #6a11cb, #2575fc); /* Violett-Blau */
+    -fx-background-radius: 20;
+    -fx-text-fill: #dddddb;
+    -fx-border-color: #dddbdb;
+    -fx-border-width: 2;
+    -fx-font-size: 18px;
+    -fx-border-radius: 20;
+    -fx-cursor: hand;
+}
+#btnDownload4:hover {
+    -fx-effect: dropshadow(gaussian, #7b2ff7, 20, 0.6, 0, 0); /*Glow effect*/
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+}
+
+#lblTitle2 {
+    -fx-font-family: 'Beyonders';
+    -fx-text-fill: linear-gradient(from 30% 30% to 100% 100%, #3e8e41, #a1cf6b);
+    -fx-font-size: 40px;
+}
+
+#lblText2 {
+    -fx-font-family: 'SF Pro';
+    -fx-font-weight: normal;
+    -fx-text-fill: #dddbdb;
+    -fx-font-size: 30px;
+    -fx-font-style: italic;
+}
+
+#tfSearch4 {
+    -fx-background-color: transparent;
+    -fx-text-fill: #dddddb;
+    -fx-prompt-text-fill: #dddbdb; /* Farbe vom Platzhaltertext */
+    -fx-border-color: linear-gradient(from 30% 30% to 100% 100%, #6a11cb, #2575fc);
+    -fx-border-width: 2;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-font-size: 18px;
+    -fx-padding: 6 30 6 30; /* Oben, Rechts, Unten, Links */
+}
+
+#tfSearch4:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}

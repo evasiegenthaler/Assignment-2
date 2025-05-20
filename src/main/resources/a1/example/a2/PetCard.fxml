@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="spPetCard" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="a1.example.a2.PetCardController">
+   <children>
+      <ImageView fitHeight="420.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PetCard.png" />
+         </image>
+         <styleClass>
+            <String fx:value="image-view-rounded" />
+            <String fx:value="image-container" />
+         </styleClass>
+      </ImageView>
+      <BorderPane fx:id="bpPetCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="300.0" stylesheets="@style.css">
+         <top>
+            <HBox BorderPane.alignment="CENTER_RIGHT">
+               <children>
+                  <Region prefHeight="17.0" prefWidth="229.0" />
+                  <Label fx:id="lblPosition" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="113.0" styleClass="text-extra-small" stylesheets="@style.css" text="Label" />
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane>
+                     <left>
+                        <Button fx:id="btnEditSave" mnemonicParsing="false" onAction="#toggleEditSave" stylesheets="@style.css" text="Edit" BorderPane.alignment="CENTER" />
+                     </left>
+                     <right>
+                        <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#deletePet" stylesheets="@style.css" text="Delete" BorderPane.alignment="CENTER" />
+                     </right>
+                  </BorderPane>
+                  <TextField fx:id="tfNamePetCard" promptText="Name" styleClass="textfield-uniform" stylesheets="@style.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <HBox spacing="10.0">
+                     <VBox.margin>
+                        <Insets top="35.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="lblHappinessText" styleClass="text-small" stylesheets="@style.css" text="Happiness">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblHappinessValue" styleClass="text-small" text="Label" />
+                     </children>
+                  </HBox>
+                  <Slider fx:id="slHappiness" disable="true" majorTickUnit="20.0" minorTickCount="5" showTickLabels="true" showTickMarks="true" styleClass="custom-slider" stylesheets="@style.css" />
+                  <HBox spacing="10.0">
+                     <children>
+                        <Label fx:id="lblHungerText" styleClass="text-small" stylesheets="@style.css" text="Hunger">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblHungerValue" styleClass="text-small" text="Label" />
+                     </children>
+                  </HBox>
+                  <Slider fx:id="slHunger" disable="true" majorTickUnit="20.0" minorTickCount="5" showTickLabels="true" showTickMarks="true" styleClass="custom-slider" stylesheets="@style.css" />
+                  <HBox spacing="10.0">
+                     <children>
+                        <Label fx:id="lblEnergyText" styleClass="text-small" text="Energy">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblEnergyValue" styleClass="text-small" text="Label" />
+                     </children>
+                  </HBox>
+                  <Slider fx:id="slEnergy" disable="true" majorTickUnit="20.0" minorTickCount="5" showTickLabels="true" showTickMarks="true" styleClass="custom-slider" stylesheets="@style.css" />
+               </children>
+               <BorderPane.margin>
+                  <Insets top="20.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+         <padding>
+            <Insets left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </BorderPane>
+   </children>
+   <styleClass>
+      <String fx:value="rounded-pane" />
+      <String fx:value="pet-card" />
+   </styleClass>
+</StackPane>

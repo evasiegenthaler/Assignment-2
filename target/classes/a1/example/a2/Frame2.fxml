@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="spFrame2" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="a1.example.a2.Frame2Controller">
+   <children>
+      <ImageView fx:id="ivFrame2" fitHeight="1136.0" fitWidth="1920.0" pickOnBounds="true">
+         <image>
+            <Image url="@Frame2.png" />
+         </image></ImageView>
+      <BorderPane fx:id="bpFrame2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" StackPane.alignment="TOP_LEFT">
+         <top>
+            <Label fx:id="lblTitle2" prefHeight="325.0" prefWidth="670.0" text="Create and Manage your Own Characters" textFill="#dddbdb" wrapText="true" BorderPane.alignment="TOP_LEFT">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="50.0" />
+               </BorderPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+         </top>
+         <left>
+            <VBox stylesheets="@style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblText2" prefHeight="296.0" prefWidth="670.0" stylesheets="@style.css" text="Welcome to Furry Tale! Ready to bring your dream characters to life? Choose from magical creatures like gorillas, panthers, snakes, or octopuses – name them, shape their personalities, and take care of their needs. Are they energetic, cuddly, or a little mischievous? It’s your story to tell! Let the adventure begin..." textFill="#dddbdb" wrapText="true">
+                     <font>
+                        <Font name="SF Pro Italic" size="30.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnCreate" mnemonicParsing="false" onAction="#switchToFrame3" stylesheets="@style.css" text="Create Character" textFill="#131315">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Region prefHeight="100.0" prefWidth="257.0" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="btnShow" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#switchToFrame4" stylesheets="@style.css" text="Show Characters" textFill="#131315">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <StackPane.margin>
+            <Insets left="70.0" />
+         </StackPane.margin>
+         <bottom>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnQuit2" alignment="CENTER" mnemonicParsing="false" onAction="#quitApplication" prefHeight="46.0" prefWidth="176.0" text="Quit Application">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="60.0" />
+               </BorderPane.margin>
+            </HBox>
+         </bottom>
+      </BorderPane>
+      <Rectangle fx:id="dimBackground" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1080.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="1920.0" />
+   </children>
+</StackPane>
